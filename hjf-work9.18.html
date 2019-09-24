@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		 <meta charset="UTF-8">
+
+		<title></title>
+	</head>
+	<body>
+	<div id="txt"></div>
+    <input type="text" id="in1">+<input type="text" id="in2">
+    <button id="btn">结果</button>
+    <script>
+        var txt = document.getElementById('txt');
+        var in1 = document.getElementById('in1');
+        var in2 = document.getElementById('in2');
+        var btn = document.getElementById('btn');
+        btn.onclick = function(){
+            var a = parseInt(in1.value);
+            var b = parseInt(in2.value);
+             if(!a||!b){ 
+                   alert("请输入数字")
+                }else
+                var result=a + b
+                txt.innerHTML = result
+               }
+    </script>
+	</body>
+</html>
