@@ -1,0 +1,141 @@
+/*头部内容*/
+.title{
+	
+	width:100%;
+	height:246px;
+	background-color: #3f51b5;
+}
+/*图片*/
+.site img{
+	display: block;
+	 text-align: center;
+	width:120px;
+	height:120px;
+	background-size: cover;
+	margin: 15px auto;
+}
+/*图片下的文字*/
+.site-one{
+	display: block;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+   margin: 15px auto;
+    color: white;
+}
+/*长条*/
+.div{
+	position: absolute;
+}
+.nav{
+    height: 68px;
+    background-color: rgba(0, 0, 0, 0.08);
+    margin-top: 25px;
+}
+/*长条里的文字*/
+.mdl-a{
+	position: relative;
+	left:335px;
+	margin-left:188px;
+	text-decoration: none;
+	text-align: center;
+    line-height: 68px;
+    color: #fff;
+    text-decoration: none;
+    
+}
+/*内容*/
+.mian{
+	width:884px;
+	height:1310px;
+	
+	margin: 46px 520px;
+	box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+	
+}
+/*标题*/
+.mian-title{
+	position: relative;
+	top: 21px;
+	left: 14px;
+	font-size:31px;
+	font-family: "Roboto";
+}
+/*图片*/
+.pic img{
+	position: relative;
+	top: 45px;
+	width:884px;
+	height:284px;
+}
+/*n内容*/
+.cell{
+	margin:62px 4px 9px 107px;
+	position: relative;
+	top: 10px;
+	font-size:24px;
+	font-family: "Roboto","Helvetica","Arial",sans-serif;
+}
+.cell p{
+	margin:42px 0px 0px 30px;
+	font-size: 19px;
+    color: rgba(0,0,0,.54);
+}
+.nei{
+	font-size:24px;
+	margin:53px 0px 0px 118px ;
+}
+.nei p{
+	margin:42px 0px 0px 30px;
+	font-size: 19px;
+    color: rgba(0,0,0,.54);
+}
+.cell-two h3{
+	font-size:24px;
+	margin:32px 0px 0px 127px ;
+}
+.cell-two img{
+	position: absolute;
+	margin-right: -198px;
+	margin-left:162px;
+	margin-top:22px;
+	width:192px;
+	height:200px;
+}
+.cell-two  i{
+	position: relative;
+	top: 170px;
+	left:141px;
+	display: inline-block;
+    width: 193px;
+    height: 52px;
+    background-color: rgba(0, 0, 0, 0.3);
+    line-height: 52px;
+    font-style: normal;
+    color: #fff;
+    margin-left: 20px;
+     font-size: 20px;
+}
+.i-one{
+	position: relative;
+    top: 204px;
+    right: 239px;
+}
+/*尾部*/
+.foot{
+	height: 100px;
+    width: 100%;
+    background-color: #424242;
+    margin-top: 50px;
+}
+.mdl-logo{
+	line-height: 100px;
+	font-size:19px;
+	color:white;
+	margin-left:700px;
+}
+.mdl-logo a{
+	color: white;
+	 text-decoration: none;
+}
+
