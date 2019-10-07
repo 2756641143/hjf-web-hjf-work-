@@ -1,0 +1,396 @@
+/*总体*/
+.zong{
+ width: 1324px;
+ height: 870px;
+ position: relative;
+
+}
+/**{
+	margin:0px;
+	padding: 0px;
+}*/
+/*头部*/
+.title{
+	width: 1170px;
+	height: 130;
+	left: 250px;
+	position: relative;
+}
+.title img{
+	position: absolute;
+	top: 27px;
+}
+.title a{
+	position: relative;
+	left: 232px;
+	margin-left: 52px;
+	line-height:164px;
+	
+    font-size: 17px;
+    font-weight: 600;
+    
+    color: #121212;
+   
+}
+.title p img{
+padding-left:1080px;
+}
+/*中间部分*/
+.row{
+	width: 1200px;
+	height: 687px;
+	display: flex;
+	float: right;
+	margin-right: -223px;
+	margin-top: 77px;
+}
+.div3{
+	margin-left: 20px;
+}
+.div3 h5{
+	font-size: 25px;
+}
+.div3 p a{
+	margin-left: 20px;
+	position: relative;
+	left: -20px;
+}
+.a1{
+	color: #121212;
+    font-weight: 700;
+    font-size: 35px;
+}
+.a2{
+    color: #737373;
+}
+.a3{
+	    color: #e35031;
+}
+.p1 a{
+	position:relative;
+	top: -19px;
+}
+.a4{
+	color: #e53031;
+}
+.p2{
+	    font-size: 16px;
+}
+.p3 a{
+	    font-weight: 600;
+    text-transform: uppercase;
+}
+.p3 input{
+	width: 270px;
+	height:45px;
+}
+.p4{
+	margin-left: 105px;
+	margin-top:31px;
+}
+.p4 span{
+	display: inline-block;
+    width: 47px;
+    height: 36px;
+    font-size: 32px;
+        color: #6c6b6b;
+    background: linear-gradient(to bottom,#efefef,#e0e0e0);
+    text-align: center;
+    line-height: 36px;
+}
+.p4 input{
+	width: 47px;
+    height: 32px;
+    border: none;
+    outline: none;
+    text-align: center;
+    position: relative;
+    bottom: 7px;
+    background: #e53031;
+        color: #fff;
+}
+.p5 input{
+	width: 157px;
+    height: 47px;
+    border: none;
+    outline: none;
+    text-align: center;
+    position: relative;
+    bottom: 7px;
+    background: #e53031;
+        color: #fff;
+        margin-left: 102px;
+        margin-top: 20px;
+}
+
+/*第三部分*/
+.div4{
+	margin-top: 599px;
+	
+	 margin-left: 338px;
+}
+.a5{
+	border-bottom: solid 3px red;
+}
+.p6{
+	margin-left: 20px; 
+}
+.p6{
+	line-height: 60px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #121212;
+    border: none;
+   display: inline-block;
+}
+.p7{
+	font-weight: 400; 
+    line-height: 30px; 
+    font-size: 14px;
+    margin-left:18px;
+    margin-top: 17px;
+}
+.div4 h6{
+	margin-left:18px;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgba(0,0,0,0.7);
+     margin-bottom: 30px;
+}
+
+/*第四部分*/
+.div5{
+	
+	margin-left: 351px;
+	margin-top: 100px;
+}
+.div5 h6{
+	margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+.div5 p{
+	font-weight: 400;
+    line-height: 30px;
+    font-size: 14px;
+        margin-bottom: 95px;
+}
+
+/*第五部分*/
+
+.div6{
+	
+	margin-left: 351px;
+	margin-top: -21px;
+}
+.div6 h6{
+	margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+.div6 p{
+	font-weight: 400;
+    line-height: 30px;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+/*第六部分*/
+.div7{
+	
+	margin-left: 351px;
+	margin-top: 130px;
+}
+.div7 h5{
+	font-size: 26px;
+    margin-bottom: 45px;
+}
+
+/*尾部*/
+*{
+	  padding: 0;
+	margin: 0;
+}
+a,li{
+	text-decoration: none;
+	list-style: none;
+}
+#footer{
+	width: 100%;
+	height: 624px;
+	background: #3a3939;
+    padding-top:80px;
+    box-sizing: border-box;
+    margin-top: 245px;
+  
+}
+#foot-top{
+	width: 1200px;
+	height: 379px;
+	margin:0 auto 50px;	
+	
+}
+#foot-top #logo{
+	width: 470px;
+	float: left;
+}
+#foot-top #logo>p{
+	padding: 52px 40px 45px 0;
+	color: rgba(255,255,255,0.6);
+	font-weight: 400;
+    line-height: 30px;
+    font-size: 16px;
+}
+#foot-top #logo>p span{
+	color: #e53031;
+}
+#foot-top #logo li{
+	float: left;
+	margin-right:15px;
+}
+#foot-top #logo #tran{
+	color: rgba(255,255,255,0.2);
+    margin: 55px 18px 0 0;
+}
+#foot-top #logo #tran a{
+	text-decoration: none;
+    outline: none;
+    color: #8e8e8e;
+    margin-left: 5px;
+}
+#foot-top #logo #tran a:hover{
+	color: #e53031;
+}
+#foot-top #list{
+	width:400px;
+	float: right;
+}
+#foot-top #list h5{
+	color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 15px;
+}
+#foot-top #list #imp{
+	width: 35px;
+	height: 1px;
+    background-color: red;
+    margin-bottom: 45px;
+}
+#foot-top #list ul{
+	float: left;
+	margin-right:70px;
+}
+#foot-top #list ul li{
+    margin-bottom: 15px;
+}
+#foot-top #list ul a{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 14px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: #8e8e8e;
+}
+#foot-top #list ul a:hover{
+	color: #e53031;
+}
+#foot-top #new{
+	width:300px;
+	float: right;
+}
+#foot-top #new h5{
+	color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 15px;
+}
+#foot-top #new #imp{
+	width: 35px;
+	height: 1px;
+    background-color: red;
+    margin-bottom: 45px;
+}
+#foot-top #new #fri{
+	height: 84px;
+	border-bottom: 1px solid #4a4949;
+}
+#foot-top #new ul a{
+	font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    line-height: 26px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #8e8e8e;
+}
+#foot-top #new ul a:hover{
+	color: #e53031;
+}
+#foot-top #new ul span{
+	font-size: 14px;
+	margin-top: 10px;
+	display: block;
+	color: rgba(255,255,255,0.35);
+    letter-spacing: 1px;
+}
+#foot-bottom{
+	height: 110px;
+	background-color: #1b1a1a;
+	position:relative;
+}
+#foot-bottom #ege{
+	width: 1200px;
+	height: 50px;
+	margin:0 auto;
+	padding:30px 0;
+	position: relative;
+}
+#foot-bottom #bot-left{
+	color: #fff;
+    margin-top: 15px;
+    float: left;
+}
+#foot-bottom #bot-left span{
+	color: #e53031;
+}
+#foot-bottom #bot-right input{
+	float: right;
+}
+#foot-bottom #bot-right input{
+	width:400px;
+    height:50px;
+    padding: 0 148px 0 15px;
+    background: #2d2d2d;
+    color: rgba(255,255,255,0.25);
+    border: none;
+    box-sizing: border-box;
+}
+#foot-bottom #bot-right button{
+	width: 145px;
+	height:40px ;
+    color: #fff;
+    border: 1px solid #e53031;
+    background-color: #e53031;
+    position: absolute;
+    top:35px;
+    right:4px;
+    font-size: 14px;
+}
+#foot-bottom #return{
+	display: block;
+	width:30px;
+	height: 30px;
+	background-color:#e53031;
+	border-radius:3px;
+	line-height: 30px;
+	text-align: center;
+	position:fixed;
+    bottom:15px;
+    right:15px;
+}
