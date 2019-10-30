@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="jquery.min.js"></script>
+    <style>
+    	*{
+    		margin: 0;
+    		padding: 0;
+    	}
+        #mydiv{
+            position: absolute;
+            top: 24px;
+            left:80px;
+            display: none;
+        }
+        #mydiv>div{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            float: left;
+            border: 2px solid #ffffff;
+            box-shadow:3px 2px 3px 2px #333333;
+            margin-left:20px;
+        }
+           #da{
+            width: 80px;
+            height: 80px;
+            background-color:cornflowerblue;
+            border: 3px solid #ffffff;
+            position: absolute;
+            border-radius: 50%;
+            box-shadow:3px 2px 3px 2px #333333;
+            
+        }
+        #div1{
+            background-color: rosybrown;
+        }
+        #div2{
+            background-color: burlywood;
+        }
+        #div3{
+            background-color: aquamarine;
+        }
+        #div4{
+            background-color:brown;
+        }
+        #div5{
+            background-color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <div id="da"></div>
+    <div id="mydiv">
+        <div id="div1"></div>
+        <div id="div2"></div>
+        <div id="div3"></div>
+        <div id="div4"></div>
+        <div id="div5"></div>
+    </div>
+    <script>
+        $("#div1").click(function(){
+            $("body").css({"background-color":"rosybrown"});
+            $("#da").css({"background-color":"rosybrown"});
+        })
+        $("#div2").click(function(){
+            $("body").css({"background-color":"burlywood"});
+            $("#da").css({"background-color":"burlywood"});
+        })
+        $("#div3").click(function(){
+            $("body").css({"background-color":"aquamarine"});
+            $("#da").css({"background-color":"aquamarine"});
+        })
+        $("#div4").click(function(){
+            $("body").css({"background-color":"brown"});
+            $("#da").css({"background-color":"brown"});
+        })
+        $("#div5").click(function(){
+            $("body").css({"background-color":"cyan"});
+            $("#da").css({"background-color":"cyan"});
+        })
+        $("#da").click(function(){
+            $("#mydiv").css({"display":"block"});
+        })
+    </script>
+</body>
+</html>
