@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车111</title>
+		<script src="jquery.min.js"></script>
+		<style type="text/css">
+			table{
+				width: 800px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<table border="black" cellspacing="0" cellpadding="0">
+			<tr>
+				<td>选择</td>
+				<td>商品</td>
+				<td>数量</td>
+				<td>单价/元</td>
+				<td>总价/元</td>
+			</tr>
+			<!--华为-->
+			<tr>
+				<td>
+					<input type="checkbox" id="che1"/>
+				</td>
+				<td>华为</td>
+				<td>
+					<button id="reduce1">-</button>
+					<span id="num1">1</span>
+					<button id="plus1">+</button>
+				</td>
+				<td>1999</td>
+				<td id="price1">1999</td>
+			</tr>
+			<!--小米-->
+			<tr>
+				<td>
+					<input type="checkbox" id="che2"/>
+				</td>
+				<td>小米</td>
+				<td>
+					<button id="reduce2">-</button>
+					<span id="num2">1</span>
+					<button id="plus2">+</button>
+				</td>
+				<td>2999</td>
+				<td id="price2">2999</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>共:<span id="gong" style="color: red;">0</span>件</td>
+				<td>总价:</td>
+				<td id="price">0</td>
+			</tr>
+		</table>
+		<script type="text/javascript">
+            //对选择1进项判断,如果勾选,点击加减号总价进行改变,如果没有改变,只有总价1改变
+            	$('#plus1').click(function(){
+	              	$('#num1').text(Number(num1.innerText)+1)
+	           	 	$('#price1').text(Number(price1.innerText)+1999)
+	            })
+                $('#reduce1').click(function(){
+	           	 	$('#num1').text(Number(num1.innerText)-1)
+	           	 	$('#price1').text(Number(price1.innerText)-1999)
+	            })
+            
+            //对选择2进项判断,如果勾选,点击加减号总价进行改变,如果没有改变,只有总价2改变
+            	$('#plus2').click(function(){
+	           	 	$('#num2').text(Number(num2.innerText)+1)
+	           	 	$('#price2').text(Number(price2.innerText)+2999)
+	            })
+	            $('#reduce2').click(function(){
+	           	 	$('#num2').text(Number(num2.innerText)-1)
+	           	 	$('#price2').text(Number(price2.innerText)-2999)
+	            })
+        
+            //当勾选1被点击时,首先判断选框1和选框2是否同时被选中
+            $('#che1').click(function(){
+                //判断两个选框都被选时
+            	if($('#che1').prop('checked')==true&&$('#che2').prop('checked')==true){
+               	   $('#price').text(Number(price1.innerText)+Number(price2.innerText))
+           	 	   $('#gong').text(Number(num2.innerText)+Number(num1.innerText))
+                }else if ($('#che1').prop('checked')==true ) {   //当只有选框1被选时  
+            	   $('#price').text(Number(price1.innerText))
+           	 	   $('#gong').text(Number(num1.innerText))
+           	 	}else{  //当两个选框都没有被选时
+           	 	  $('#price').text(0)
+           	 	  $('#gong').text(0)
+           	 	}
+            	$('#plus1').click(function(){  //当点击＋时
+	               if($('#che1').prop('checked')==true&&$('#che2').prop('checked')==true){
+	                  $('#price').text(Number(price1.innerText)+Number(price2.innerText))
+	           	 	  $('#gong').text(Number(num1.innerText)+Number(num2.innerText))
+	           	 	
+	               }else if($('#che1').prop('checked')==true&&$('#che2').prop('checked')!=true) {
+	           	 	  $('#price').text(Number(price1.innerText))
+	           	 	  $('#gong').text(Number(num1.innerText))
+	           	 	}else{
+	           	 	  $('#price').text(0)
+	           	 	  $('#gong').text(0) 	
+	           	 	}
+           	 	})
+            	$('#reduce1').click(function(){  //当点击0-时
+	               if($('#che1').prop('checked')==true&&$('#che2').prop('checked')==true){
+	                  $('#price').text(Number(price1.innerText)+Number(price2.innerText))
+	           	 	  $('#gong').text(Number(num1.innerText)+Number(num2.innerText))
+	           	 	
+	               }else if($('#che1').prop('checked')==true&&$('#che2').prop('checked')!=true) {
+	               	  $('#num1').text(Number(num1.innerText)-1)
+	           	 	  $('#price1').text(Number(price1.innerText)-1999)
+	           	 	  $('#price').text(Number(price1.innerText))
+	           	 	  $('#gong').text(Number(num1.innerText))
+	           	 	}else{
+	           	 	  $('#price').text(0)
+	           	 	  $('#gong').text(0) 	
+	           	 	}
+           	 	})
+            })
+            //当点击选框2时
+            $('#che2').click(function(){
+            	if($('#che1').prop('checked')==true&&$('#che2').prop('checked')==true){
+               	   $('#price').text(Number(price1.innerText)+Number(price2.innerText))
+           	 	   $('#gong').text(Number(num2.innerText)+Number(num1.innerText))
+                }else if ($('#che2').prop('checked')==true ) {
+            	   $('#price').text(Number(price2.innerText))
+           	 	   $('#gong').text(Number(num2.innerText))
+           	 	}else{
+           	 	   $('#price').text(0)
+           	 	   $('#gong').text(0)
+           	 	}
+            	$('#plus2').click(function(){
+	               if($('#che2').prop('checked')==true&&$('#che1').prop('checked')==true){
+	                  $('#price').text(Number(price1.innerText)+Number(price2.innerText))
+	           	 	  $('#gong').text(Number(num1.innerText)+Number(num2.innerText))
+	           	 	
+	               }else if($('#che2').prop('checked')==true&&$('#che1').prop('checked')!=true) {
+	           	 	  $('#price').text(Number(price2.innerText))
+	           	 	  $('#gong').text(Number(num2.innerText))
+	           	 	}else{
+	           	 	  $('#price').text(0)
+	           	 	  $('#gong').text(0) 	
+	           	 	}
+           	 	})
+            	$('#reduce2').click(function(){
+	               if($('#che2').prop('checked')==true&&$('#che1').prop('checked')==true){
+	                  $('#price').text(Number(price1.innerText)+Number(price2.innerText))
+	           	 	  $('#gong').text(Number(num1.innerText)+Number(num2.innerText))
+	           	 	
+	               }else if($('#che2').prop('checked')==true&&$('#che1').prop('checked')!=true) {
+	           	 	  $('#price').text(Number(price2.innerText))
+	           	 	  $('#gong').text(Number(num2.innerText))
+	           	 	}else{
+	           	 	  $('#price').text(0)
+	           	 	  $('#gong').text(0) 	
+	           	 	}
+           	 	})
+            })
+		</script>
+	</body>
+</html>
